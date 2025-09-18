@@ -40,7 +40,7 @@ Body:
   "anoPublicacao": 2010
 }
 <br>
-<img width="1394" height="729" alt="image" src="https://github.com/user-attachments/assets/e43bdb0e-0cb4-459c-8f84-2762f8f3eb0a" />
+<img width="1963" height="963" alt="image" src="https://github.com/user-attachments/assets/be717534-a18b-4232-9361-ed06fecaaff5" />
 
 API: Api para buscar livros, com validação se existe livros na base de dados.
 <br>
@@ -48,7 +48,7 @@ Metodo: GET
 <br>
 URL: localhost:8080/livro/buscarlivros
 <br>
-<img width="1565" height="1198" alt="image" src="https://github.com/user-attachments/assets/8a50481b-c767-45a8-9766-418691deb9a4" />
+<img width="1978" height="1076" alt="image" src="https://github.com/user-attachments/assets/39253120-1ac3-421e-b07e-abd4db52f64c" />
 
 API: Api para deletar um livro com validação se o id do livro existe
 <br>

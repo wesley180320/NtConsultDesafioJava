@@ -1,7 +1,7 @@
 JDK: 17
 Tecnologias utilizadas: Spring Boot, Java, H2, Junit, JPA.  
 
-Decisões tecnicas:
+Decisões técnicas:
 <br>
 Spring Boot: Para utilizar as anotações e facilicar o desenvolvimento das APIS REST
 <br>
@@ -13,7 +13,7 @@ Jpa: Para realizar consultas no banco e salvar dados.
 
 APIS:
 
-API: Api para salvar os dados do livro, com validação de body e evita salvar dois livros iguais.
+API: Api para salvar os dados do livro, com validação de body e evitar salvar dois livros iguais.
 <br>
 Metodo: POST
 <br>

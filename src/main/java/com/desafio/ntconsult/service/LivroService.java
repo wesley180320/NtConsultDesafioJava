@@ -26,7 +26,7 @@ public class LivroService {
         Livro novoLivro = new Livro();
         BeanUtils.copyProperties(livroDTO, novoLivro);
         livroRepository.save(novoLivro);
-        return new ResponseDTO("Livro salvo com sucesso!");
+        return new ResponseDTO("Livro salvo com sucesso!", novoLivro.getId());
     }
 
     public Object atualizarLivro(Integer idLivro, LivroDTO livroDTO) {

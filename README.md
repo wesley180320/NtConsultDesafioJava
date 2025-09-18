@@ -5,7 +5,7 @@ Decisões tecnicas:
 <br>
 Spring Boot: Para utilizar as anotações e facilicar o desenvolvimento das APIS REST
 <br>
-H2: Banco de dados em memoria utilizado em desenvolvimento, para projetos reais necessário atualizar o properties.
+H2: Banco de dados em memoria utilizado em desenvolvimento.
 <br>
 Junit: Para realizar testes nas APIS.
 <br>

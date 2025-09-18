@@ -56,4 +56,5 @@ Metodo: DELETE
 <br>
 URL:localhost:8080/livro/deletar/{idLivro}
 <br>
-<img width="1689" height="664" alt="image" src="https://github.com/user-attachments/assets/23ee6961-4621-491d-b511-18faa7efa48a" />
+<img width="1974" height="875" alt="image" src="https://github.com/user-attachments/assets/15c6ef15-8173-49b1-a411-3cbc3ed87e21" />
+

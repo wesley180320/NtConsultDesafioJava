@@ -9,7 +9,7 @@ H2: Banco de dados em memoria utilizado em desenvolvimento.
 <br>
 Junit: Para realizar testes nas APIS.
 <br>
-Jpa: Para realizar consultas no banco e salvar daddos.
+Jpa: Para realizar consultas no banco e salvar dados.
 
 APIS:
 

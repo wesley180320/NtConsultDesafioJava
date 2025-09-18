@@ -1,6 +1,12 @@
 JDK: 17
 Tecnologias utilizadas: Spring Boot, Java, H2, Junit, JPA.  
 
+Decisões tecnicas:
+Spring Boot: Para utilizar as anotações e facilicar o desenvolvimento das APIS REST
+H2: Banco de dados em memoria utilizado em desenvolvimento, para projetos reais necessário atualizar o properties.
+Junit: Para realizar testes nas APIS.
+Jpa: Para realizar consultas no banco e salvar daddos.
+
 APIS:
 
 API: Api para salvar os dados do livro, com validação de body e evita salvar dois livros iguais.

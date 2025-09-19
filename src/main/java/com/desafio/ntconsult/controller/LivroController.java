@@ -34,7 +34,6 @@ public class LivroController {
         return ResponseEntity.ok().body(livroService.deletarLivro(idLivro));
     }
 
-
     @GetMapping("/buscarlivros")
     private ResponseEntity<ArrayList<Livro>> buscarLivros() {
         return ResponseEntity.ok().body(livroService.buscarLivros());

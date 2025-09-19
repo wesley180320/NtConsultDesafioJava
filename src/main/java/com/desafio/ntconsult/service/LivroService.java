@@ -20,7 +20,7 @@ public class LivroService {
 
     public Object salvarLivro(LivroDTO livroDTO) {
         Optional<Livro> livro = livroRepository.findByTituloAndAutor(livroDTO.getTitulo(), livroDTO.getAutor());
-        if(livro.isPresent()){
+        if (livro.isPresent()) {
             throw new LivroException("Livro já esta cadastrado");
         }
         Livro novoLivro = new Livro();

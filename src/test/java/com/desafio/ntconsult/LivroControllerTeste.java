@@ -35,7 +35,7 @@ public class LivroControllerTeste {
 
 
     @Test
-    void salvarLivroRetornarCreated() throws Exception {
+    void dadoLivroValido_quandoSalvar_entaoRetornarCreated() throws Exception {
 
         LivroDTO livroDTO = new LivroDTO();
         livroDTO.setAutor("Wesley");
@@ -49,7 +49,7 @@ public class LivroControllerTeste {
     }
 
     @Test
-    void salvarLivroJaCadastradoRetornarBadRequest() throws Exception {
+    void dadoLivroJaCadastrado_quandoSalvar_entaoRetornarBadRequest() throws Exception {
 
         LivroDTO livroDTO = new LivroDTO();
         livroDTO.setAutor("Wesley");
@@ -67,7 +67,7 @@ public class LivroControllerTeste {
     }
 
     @Test
-    void salvarLivroCamposVaziosNoJsonRetornarMensagem() throws Exception {
+    void dadoLivroComCamposVazios_quandoSalvar_entaoRetornarMensagensDeErro() throws Exception {
 
         LivroDTO livroDTO = new LivroDTO();
 
@@ -82,9 +82,9 @@ public class LivroControllerTeste {
     }
 
     @Test
-    void atualizarLivroRetornarSucesso() throws Exception {
+    void dadoLivroExistente_quandoAtualizar_entaoRetornarSucesso() throws Exception {
 
-        Integer idLivro = 1;
+        Long idLivro = 1L;
 
         LivroDTO livroDTO = new LivroDTO();
         livroDTO.setAutor("Wesley2");
@@ -99,9 +99,9 @@ public class LivroControllerTeste {
     }
 
     @Test
-    void atualizarLivroCamposVaziosNoJsoRetornarMensagem() throws Exception {
+    void dadoLivroComCamposVazios_quandoAtualizar_entaoRetornarMensagensDeErro() throws Exception {
 
-        Integer idLivro = 1;
+        Long idLivro = 1L;
         LivroDTO livroDTO = new LivroDTO();
 
         mockMvc.perform(put("/livro/atualizar/{idLivro}", idLivro)
@@ -114,9 +114,9 @@ public class LivroControllerTeste {
     }
 
     @Test
-    void deletarLivroRetornarSucesso() throws Exception {
+    void dadoIdValido_quandoDeletar_entaoRetornarSucesso() throws Exception {
 
-        Integer idLivro = 1;
+        Long idLivro = 1L;
 
         Mockito.when(livroService.deletarLivro(idLivro))
                 .thenReturn(new ResponseDTO("Livro deletado com sucesso id: " + idLivro));
@@ -127,9 +127,9 @@ public class LivroControllerTeste {
     }
 
     @Test
-    void deletarLivroIdNullRetornarBadRequest() throws Exception {
+    void dadoIdInexistente_quandoDeletar_entaoRetornarBadRequest() throws Exception {
 
-        Integer idLivro = 3;
+        Long idLivro = 3L;
 
         Mockito.when(livroService.deletarLivro(idLivro))
                 .thenThrow(new LivroException("Id do livro não encontrado"));
@@ -141,7 +141,7 @@ public class LivroControllerTeste {
 
 
     @Test
-    void buscarLivrosRetornarSucesso() throws Exception {
+    void dadoLivrosExistentes_quandoBuscarTodos_entaoRetornarOk() throws Exception {
 
         ArrayList<Livro> livros = new ArrayList<>();
 
@@ -153,7 +153,7 @@ public class LivroControllerTeste {
     }
 
     @Test
-    void buscarLivrosNullRetornarBadRequest() throws Exception {
+    void dadoNenhumLivro_quandoBuscarTodos_entaoRetornarBadRequest() throws Exception {
 
         Mockito.when(livroService.buscarLivros())
                 .thenThrow(new LivroException("Não há livros para mostrar"));

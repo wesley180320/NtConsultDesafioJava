@@ -1,6 +1,7 @@
 package com.desafio.ntconsult.controller;
 
 import com.desafio.ntconsult.DTO.LivroDTO;
+import com.desafio.ntconsult.DTO.ResponseDTO;
 import com.desafio.ntconsult.model.Livro;
 import com.desafio.ntconsult.service.LivroService;
 import jakarta.validation.Valid;
@@ -20,17 +21,17 @@ public class LivroController {
     private LivroService livroService;
 
     @PostMapping("/")
-    private ResponseEntity<Object> salvarLivro(@RequestBody @Valid LivroDTO livroDTO) {
+    private ResponseEntity<ResponseDTO> salvarLivro(@RequestBody @Valid LivroDTO livroDTO) {
         return ResponseEntity.status(HttpStatus.CREATED).body(livroService.salvarLivro(livroDTO));
     }
 
     @PutMapping("/atualizar/{idLivro}")
-    private ResponseEntity<Object> atualizarLivro(@PathVariable Integer idLivro, @RequestBody @Valid LivroDTO livroDTO) {
+    private ResponseEntity<ResponseDTO> atualizarLivro(@PathVariable Long idLivro, @RequestBody @Valid LivroDTO livroDTO) {
         return ResponseEntity.ok().body(livroService.atualizarLivro(idLivro, livroDTO));
     }
 
     @DeleteMapping("/deletar/{idLivro}")
-    private ResponseEntity<Object> deletarLivro(@PathVariable Integer idLivro) {
+    private ResponseEntity<ResponseDTO> deletarLivro(@PathVariable Long idLivro) {
         return ResponseEntity.ok().body(livroService.deletarLivro(idLivro));
     }
 

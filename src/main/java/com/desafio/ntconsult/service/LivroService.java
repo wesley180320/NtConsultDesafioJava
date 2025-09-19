@@ -18,7 +18,7 @@ public class LivroService {
     @Autowired
     private LivroRepository livroRepository;
 
-    public Object salvarLivro(LivroDTO livroDTO) {
+    public ResponseDTO salvarLivro(LivroDTO livroDTO) {
         Optional<Livro> livro = livroRepository.findByTituloAndAutor(livroDTO.getTitulo(), livroDTO.getAutor());
         if (livro.isPresent()) {
             throw new LivroException("Livro já esta cadastrado");
@@ -29,7 +29,7 @@ public class LivroService {
         return new ResponseDTO("Livro salvo com sucesso!", novoLivro.getId());
     }
 
-    public Object atualizarLivro(Integer idLivro, LivroDTO livroDTO) {
+    public ResponseDTO atualizarLivro(Long idLivro, LivroDTO livroDTO) {
         Optional<Livro> livro = livroRepository.findById(idLivro);
         if (livro.isEmpty()) {
             throw new LivroException("Id do livro não encontrado");
@@ -40,7 +40,7 @@ public class LivroService {
         return new ResponseDTO("Livro atualizado com sucesso id: " + idLivro);
     }
 
-    public Object deletarLivro(Integer idLivro) {
+    public ResponseDTO deletarLivro(Long idLivro) {
         Optional<Livro> livro = livroRepository.findById(idLivro);
         if (livro.isEmpty()) {
             throw new LivroException("Id do livro não encontrado");

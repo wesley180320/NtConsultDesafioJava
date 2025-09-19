@@ -20,12 +20,13 @@ Metodo: POST
 URL: localhost:8080/livro/
 <br>
 Body:
+<br>
 {
   "titulo": "Clean Code",
   "autor": "Robert C. Martin",
   "anoPublicacao": 2008
 }
-<img width="1975" height="738" alt="image" src="https://github.com/user-attachments/assets/2b4b3543-a9ea-40ed-a4fb-f01e7696318d" />
+<img width="1968" height="1032" alt="image" src="https://github.com/user-attachments/assets/b1baa071-0f94-46c0-b408-4c0a996cb34e" />
 
 API: Api para atualizar livro passando o ID, com validação se o ID existe.
 <br>
@@ -34,13 +35,14 @@ Metodo: PUT
 URL:localhost:8080/livro/atualizar/{idLivro}
 <br>
 Body:
+<br>
 {
   "titulo": "Clean ",
   "autor": "Robert",
   "anoPublicacao": 2010
 }
 <br>
-<img width="1967" height="778" alt="image" src="https://github.com/user-attachments/assets/e6056588-3d06-4066-aee6-2cf3246f7f42" />
+<img width="1968" height="965" alt="image" src="https://github.com/user-attachments/assets/fd99cbf1-f0ec-46bf-a0ab-152a10b6d48e" />
 
 API: Api para buscar livros, com validação se existe livros na base de dados.
 <br>
@@ -48,7 +50,7 @@ Metodo: GET
 <br>
 URL: localhost:8080/livro/buscarlivros
 <br>
-<img width="1963" height="819" alt="image" src="https://github.com/user-attachments/assets/dccaaa1e-fa96-4700-8983-406e88659880" />
+<img width="1964" height="1071" alt="image" src="https://github.com/user-attachments/assets/202b7531-f72e-4530-8876-2f8a6e89a954" />
 
 API: Api para deletar um livro com validação se o id do livro existe
 <br>

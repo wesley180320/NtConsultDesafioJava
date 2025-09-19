@@ -25,7 +25,7 @@ Body:
   "autor": "Robert C. Martin",
   "anoPublicacao": 2008
 }
-<img width="1375" height="856" alt="image" src="https://github.com/user-attachments/assets/e741841d-a99f-476d-8f2e-780a749bf332" />
+<img width="1975" height="738" alt="image" src="https://github.com/user-attachments/assets/2b4b3543-a9ea-40ed-a4fb-f01e7696318d" />
 
 API: Api para atualizar livro passando o ID, com validação se o ID existe.
 <br>
@@ -40,7 +40,7 @@ Body:
   "anoPublicacao": 2010
 }
 <br>
-<img width="1963" height="963" alt="image" src="https://github.com/user-attachments/assets/be717534-a18b-4232-9361-ed06fecaaff5" />
+<img width="1967" height="778" alt="image" src="https://github.com/user-attachments/assets/e6056588-3d06-4066-aee6-2cf3246f7f42" />
 
 API: Api para buscar livros, com validação se existe livros na base de dados.
 <br>
@@ -48,7 +48,7 @@ Metodo: GET
 <br>
 URL: localhost:8080/livro/buscarlivros
 <br>
-<img width="1978" height="1076" alt="image" src="https://github.com/user-attachments/assets/39253120-1ac3-421e-b07e-abd4db52f64c" />
+<img width="1963" height="819" alt="image" src="https://github.com/user-attachments/assets/dccaaa1e-fa96-4700-8983-406e88659880" />
 
 API: Api para deletar um livro com validação se o id do livro existe
 <br>
@@ -56,5 +56,5 @@ Metodo: DELETE
 <br>
 URL:localhost:8080/livro/deletar/{idLivro}
 <br>
-<img width="1974" height="875" alt="image" src="https://github.com/user-attachments/assets/15c6ef15-8173-49b1-a411-3cbc3ed87e21" />
+<img width="1954" height="850" alt="image" src="https://github.com/user-attachments/assets/14863ded-38d1-46fd-901e-8a081b36749c" />
 
